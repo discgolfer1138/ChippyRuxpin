@@ -15,6 +15,7 @@ class GPIO:
         self.pins = []
         
     def setup(self,pin):
+        print "setting up "+pin
         CHIPGPIO.setup(pin, CHIPGPIO.OUT)
         CHIPGPIO.output(pin, 0)
         # cmd = "echo " + str(pin) + " > /sys/class/gpio/export"
@@ -26,6 +27,7 @@ class GPIO:
         # self.set( pin, 0 )
         
     def set(self,pin, val):
+        print "setting pin "+pin+" to "+val
         CHIPGPIO.output(pin, val)
         # if ( self.pins != None ):
         #     for pinObject in self.pins:
@@ -35,6 +37,7 @@ class GPIO:
         #             subprocess.Popen(cmd,shell=True, stdout=subprocess.PIPE)
         
     def cleanup(self):
+        print "cleanup"
         CHIPGPIO.cleanup()
         # for pinObject in self.pins:
         #     cmd = "echo 0 > /sys/class/gpio/gpio" + str(pinObject[0]) + "/value"

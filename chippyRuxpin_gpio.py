@@ -27,7 +27,7 @@ class GPIO:
         # self.set( pin, 0 )
         
     def set(self,pin, val):
-        print "setting pin "+pin+" to "+val
+        print "setting pin "+pin+" to "+str(val)
         CHIPGPIO.output(pin, val)
         # if ( self.pins != None ):
         #     for pinObject in self.pins:

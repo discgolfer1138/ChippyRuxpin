@@ -15,6 +15,7 @@ class GPIO:
         
     def setup(self,pin):
         cmd = "echo " + str(pin) + " > /sys/class/gpio/export"
+        print "running '" + cmd + "'"
         subprocess.call(cmd,shell=True, stdout=subprocess.PIPE)
         cmd = "echo \"out\" > /sys/class/gpio/gpio" + str(pin) + "/direction" 
         subprocess.Popen(cmd,shell=True, stdout=subprocess.PIPE)

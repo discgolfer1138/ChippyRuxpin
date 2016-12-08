@@ -21,6 +21,7 @@ import sys
 import time
 import subprocess
 import os
+
 from random import randint
 from threading import Thread
 from chippyRuxpin_audioPlayer import AudioPlayer
@@ -30,10 +31,10 @@ from chippyRuxpin_webFramework import WebFramework
 
 fullMsg = ""
 
-MOUTH_OPEN = 408 # GPIO pin assigned to open the mouth. XIO-P0
-MOUTH_CLOSE = 412 # GPIO pin assigned to close the mouth. XIO-P2
-EYES_OPEN = 410 # GPIO pin assigned to open the eyes. XIO-P4
-EYES_CLOSE = 414 # GPIO pin assigned to close the eyes. XIO-P6
+MOUTH_OPEN = "XIO-P0" #408 # GPIO pin assigned to open the mouth. XIO-P0
+MOUTH_CLOSE = "XIO-P2" #412 # GPIO pin assigned to close the mouth. XIO-P2
+EYES_OPEN = "XIO-P4" #410 # GPIO pin assigned to open the eyes. XIO-P4
+EYES_CLOSE = "XIO-P6" #414 # GPIO pin assigned to close the eyes. XIO-P6
 
 io = GPIO() #Establish connection to our GPIO pins.
 io.setup( MOUTH_OPEN )

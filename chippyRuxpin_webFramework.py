@@ -19,7 +19,7 @@ class WebFramework:
         def index():
             return '''
                 <form action="/" method="post">
-                    What do you want Chippy Ruxpin to say? (Or type \"twitter\" followed by some search terms):<p><input name="speech" type="text" />
+                    What do you want Chippy Ruxpin to say? (Or type \"twitter\" followed by some search terms):<p><input name="speech" type="text" value="I have a pony, he takes big shits." />
                     <input value="Go!" type="submit" />
                 </form>
             '''

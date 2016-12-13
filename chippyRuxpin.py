@@ -88,18 +88,18 @@ def talk(myText):
         audio.play("sounds/vader.mp3")
         return myText
 
-    else if( myText.find( "faith" ) >= 0 ):
+    elif( myText.find( "faith" ) >= 0 ):
         audio.play("sounds/vader2.mp3")
         return myText
 
-    else if( myText.find( "twitter" ) >= 0 ):
+    elif( myText.find( "twitter" ) >= 0 ):
         myText += "0"
         myText = myText[7:-1]
         try:
-    	    myText = twitter.getTweet( myText )
-	    except:
-	       print( "!!!ERROR: INVALID TWITTER CREDENTIALS. Please read README.md for instructions.")
-           return
+            myText = twitter.getTweet( myText )
+        except:
+            print( "!!!ERROR: INVALID TWITTER CREDENTIALS. Please read README.md for instructions.")
+            return
     
     os.system( "espeak \",...\" 2>/dev/null" ) # Sometimes the beginning of audio can get cut off. Insert silence.
     time.sleep( 0.5 )

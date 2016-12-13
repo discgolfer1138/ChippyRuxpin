@@ -87,6 +87,9 @@ def talk(myText):
     if( myText == "failed" ):
         audio.play("sounds/failed.wav")
         return myText
+    elif( myText == "breath" ):
+        audio.play("sounds/breath.wav")
+        return myText
     elif( myText == "faith" ):
         audio.play("sounds/faith.wav")
         return myText

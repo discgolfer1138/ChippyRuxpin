@@ -84,12 +84,20 @@ def updateEyes():
         time.sleep( randint( 0,7) )
    
 def talk(myText):
-    if( myText.find( "vader" ) >= 0 ):
-        audio.play("sounds/vader.wav")
+    if( myText == "failed" ):
+        audio.play("sounds/failed.wav")
         return myText
-
-    elif( myText.find( "faith" ) >= 0 ):
-        audio.play("sounds/vader2.wav")
+    elif( myText == "faith" ):
+        audio.play("sounds/faith.wav")
+        return myText
+    elif( myText == "father" ):
+        audio.play("sounds/father.wav")
+        return myText
+    elif( myText == "honored" ):
+        audio.play("sounds/honored.wav")
+        return myText
+    elif( myText == "proud" ):
+        audio.play("sounds/proud.wav")
         return myText
 
     elif( myText.find( "twitter" ) >= 0 ):

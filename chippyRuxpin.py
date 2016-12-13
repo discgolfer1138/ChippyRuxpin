@@ -31,8 +31,8 @@ from chippyRuxpin_webFramework import WebFramework
 fullMsg = ""
 
 MOUTH_OPEN = 1013 # GPIO pin assigned to open the mouth. XIO-P0
-MOUTH_CLOSE = 1017 # GPIO pin assigned to close the mouth. XIO-P2
-EYES_OPEN = 1015 # GPIO pin assigned to open the eyes. XIO-P4
+MOUTH_CLOSE = 1015 # GPIO pin assigned to close the mouth. XIO-P2
+EYES_OPEN = 1017 # GPIO pin assigned to open the eyes. XIO-P4
 EYES_CLOSE = 1019 # GPIO pin assigned to close the eyes. XIO-P6
 
 io = GPIO() #Establish connection to our GPIO pins.

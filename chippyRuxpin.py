@@ -83,6 +83,10 @@ def updateEyes():
         io.set( EYES_OPEN, 0 )
         time.sleep( randint( 0,7) )
    
+def phrase(myPhrase):
+    audio.play("sounds/"+myPhrase+".wav")
+    return myPhrase
+
 def talk(myText):
     if( myText == "failed" ):
         audio.play("sounds/failed.wav")
@@ -129,7 +133,7 @@ if( consumerKey.find( 'TWITTER' ) >= 0 ):
 else:
     twitter = ChippyTwitter(consumerKey,consumerSecret,accessTokenKey,accessTokenSecret)
 
-web = WebFramework(talk)
+web = WebFramework(talk, phrase)
 isRunning = False
 io.cleanup()
 sys.exit(1)

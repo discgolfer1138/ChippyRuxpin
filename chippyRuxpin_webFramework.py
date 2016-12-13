@@ -42,7 +42,7 @@ class WebFramework:
                                 <label for="phrase">Canned Phrase</label>
                                 <select name="phrase" class="form-control" id="phrase">
                                     <option value="">none</option>
-                                    <option value="breathing">vader: breathing</option>
+                                    <option value="breath">vader: breathing</option>
                                     <option value="failed">vader: you have failed me for the last time</option>
                                     <option value="faith">vader: I find your lack of faith disturbing</option>
                                     <option value="father">vader: No, I am your father</option>

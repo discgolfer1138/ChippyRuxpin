@@ -85,11 +85,11 @@ def updateEyes():
    
 def talk(myText):
     if( myText.find( "vader" ) >= 0 ):
-        audio.play("sounds/vader.mp3")
+        audio.play("sounds/vader.wav")
         return myText
 
     elif( myText.find( "faith" ) >= 0 ):
-        audio.play("sounds/vader2.mp3")
+        audio.play("sounds/vader2.wav")
         return myText
 
     elif( myText.find( "twitter" ) >= 0 ):

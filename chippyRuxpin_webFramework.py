@@ -48,7 +48,10 @@ class WebFramework:
                                     <option value="faith">vader: I find your lack of faith disturbing</option>
                                     <option value="father">vader: No, I am your father</option>
                                     <option value="honored">vader: We'd be honored...</option>
+                                    <option value="merryxmas">clark: boss rant</option>
+                                    <option value="nerfherder">leia: why you stuck up...</option>
                                     <option value="proud">vader: don't be too proud...</option>
+                                    <option value="surprised">clark: if I woke up tomorrow...</option>
                                 </select>
                             </div>
                             <button type="submit" class="btn btn-default">Go!</button>

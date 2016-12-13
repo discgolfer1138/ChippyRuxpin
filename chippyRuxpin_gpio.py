@@ -25,7 +25,6 @@ class GPIO:
         if ( self.pins != None ):
             for pinObject in self.pins:
                 if(pinObject[0]==pin and pinObject[1]!=val):
-                    print "setting pin "+str(pin)+" to val "+str(val)+"\n"
                     pinObject[1]=val
                     cmd = "echo " + str(val) + " > /sys/class/gpio/gpio" + str(pinObject[0]) + "/value"
                     subprocess.Popen(cmd,shell=True, stdout=subprocess.PIPE)

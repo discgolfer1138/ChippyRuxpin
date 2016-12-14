@@ -45,7 +45,7 @@ class WebFramework:
                                     <option value="believeitornot">doggo: believe it or not...</option>
                                     <option value="bitch">say what again...</option>
                                     <option value="breath">vader: breathing</option>
-                                    <option value="dogofwisdowm">doggo: ba daba da ba</option>
+                                    <option value="dogofwisdom">doggo: ba daba da ba</option>
                                     <option value="failed">vader: you have failed me for the last time</option>
                                     <option value="faith">vader: I find your lack of faith disturbing</option>
                                     <option value="father">vader: No, I am your father</option>

@@ -42,12 +42,13 @@ class WebFramework:
                                 <label for="phrase">Canned Phrase</label>
                                 <select name="phrase" class="form-control" id="phrase">
                                     <option value="">none</option>
+                                    <option value="believeitornot">doggo: believe it or not...</option>
                                     <option value="bitch">say what again...</option>
                                     <option value="breath">vader: breathing</option>
+                                    <option value="dogofwisdowm">doggo: ba daba da ba</option>
                                     <option value="failed">vader: you have failed me for the last time</option>
                                     <option value="faith">vader: I find your lack of faith disturbing</option>
                                     <option value="father">vader: No, I am your father</option>
-                                    <option value="harder">daft punk: harder, faster...</option>
                                     <option value="honored">vader: We'd be honored...</option>
                                     <option value="merryxmas">clark: boss rant</option>
                                     <option value="nerfherder">leia: why you stuck up...</option>

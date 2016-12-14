@@ -15,6 +15,7 @@ class WebFramework:
         print( "---------")
         self.talkFunc = talkFunc
         self.phraseFunc = phraseFunc
+        self.dirFunc = dirFunc
         
         @route('/')
         def index():

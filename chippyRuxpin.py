@@ -88,26 +88,7 @@ def phrase(myPhrase):
     return myPhrase
 
 def talk(myText):
-    if( myText == "failed" ):
-        audio.play("sounds/failed.wav")
-        return myText
-    elif( myText == "breath" ):
-        audio.play("sounds/breath.wav")
-        return myText
-    elif( myText == "faith" ):
-        audio.play("sounds/faith.wav")
-        return myText
-    elif( myText == "father" ):
-        audio.play("sounds/father.wav")
-        return myText
-    elif( myText == "honored" ):
-        audio.play("sounds/honored.wav")
-        return myText
-    elif( myText == "proud" ):
-        audio.play("sounds/proud.wav")
-        return myText
-
-    elif( myText.find( "twitter" ) >= 0 ):
+    if( myText.find( "twitter" ) >= 0 ):
         myText += "0"
         myText = myText[7:-1]
         try:
@@ -122,6 +103,27 @@ def talk(myText):
     audio.play("speech.wav")
     return myText
 
+def directionsDemo():
+    directions = [
+        "Start out going southwest on Blake Street toward 15th Street.",
+        # "Blake St becomes Auraria Pkwy",
+        # "Auraria Parkway becomes ramp",
+        "Merge onto I-25 southbound",
+        "Take EXIT 209B towards US-6 west",
+        "Merge onto US-6 west",
+        "Take the exit toward Indiana Street",
+        # "Keep left to take the ramp toward Indiana Street",
+        "Turn left onto Indiana Street",
+        "Turn left onto West 6th Ave Frontage Road",
+        "Turn right onto Deframe Court",
+        "You have arrived at your destination"
+    ]
+    for i in range(len(directions)):
+        os.system( "espeak \",...\" 2>/dev/null" ) # Sometimes the beginning of audio can get cut off. Insert silence.
+        time.sleep( 0.5 )
+        subprocess.call(["espeak", "-w", "speech.wav", directions[i], "-s", "130", "-a", "200", "-ven-us+m3","-g","5"])
+        audio.play("speech.wav")        
+
 mouthThread = Thread(target=updateMouth)
 mouthThread.start()
 eyesThread = Thread(target=updateEyes)
@@ -133,7 +135,7 @@ if( consumerKey.find( 'TWITTER' ) >= 0 ):
 else:
     twitter = ChippyTwitter(consumerKey,consumerSecret,accessTokenKey,accessTokenSecret)
 
-web = WebFramework(talk, phrase)
+web = WebFramework(talk, phrase, directionsDemo)
 isRunning = False
 io.cleanup()
 sys.exit(1)

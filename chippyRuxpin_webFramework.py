@@ -7,7 +7,7 @@ from bottle import run, get, post, request, route, redirect
 import socket
 
 class WebFramework:
-    def __init__(self,talkFunc, phraseFunc):
+    def __init__(self,talkFunc, phraseFunc, dirFunc):
         self.ip = [(s.connect(('8.8.8.8', 80)), s.getsockname()[0], s.close()) for s in [socket.socket(socket.AF_INET, socket.SOCK_DGRAM)]][0][1]
         print( "---------")
         print( "CHIPPY RUXPIN IS ONLINE!")
@@ -57,6 +57,7 @@ class WebFramework:
                                 </select>
                             </div>
                             <button type="submit" class="btn btn-default">Go!</button>
+                            <button type="submit" name="demo" value="1" class="btn btn-default">Directions Demo</button>
                         </form>
                     </body>
                 </html>
@@ -65,8 +66,11 @@ class WebFramework:
         def speak():
             phrase = request.forms.get('phrase')
             speech = request.forms.get('speech')
+            demo = request.forms.get('demo')
 
-            if(phrase != ""):
+            if(demo == "1"):
+                self.dirFunc()
+            elif(phrase != ""):
                 self.phraseFunc( phrase )
             else:
                 self.talkFunc( speech )

@@ -97,7 +97,7 @@ def talk(myText):
 def tweet():
     latestTweet = ""
     try:
-        latestTweet = twitter.getTweet( "to:mapquest" )
+        latestTweet = twitter.getTweet( "@MapQuest" )
     except:
         print( "!!!ERROR: INVALID TWITTER CREDENTIALS. Please read README.md for instructions.")
         return

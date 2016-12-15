@@ -15,9 +15,9 @@
 
     <script src="https://use.fontawesome.com/12a0b300c5.js"></script>
   </head>
-  <body style="background-image: url(bg.png)">
+  <body style="background-image: url(public/bg.png)">
     <div class="container">
-      <img src="mappy_ruxpin.png" class="img-responsive">
+      <img src="public/mappy_ruxpin.png" class="img-responsive">
       <form action="/" method="post" class="form-inline">
         <div class="well">
           <button type="submit" name="demo" value="1" class="btn btn-info btn-block"><i class="fa fa-map-marker"></i> Directions Demo</button>
@@ -25,7 +25,7 @@
         </div>
         <div class="well">
           <button type="submit" name="tweet" value="1" class="btn btn-info btn-block"><i class="fa fa-twitter"></i> MapQuest Tweets</button>
-          <span class="help-block">Mappy will read a random tweet directed at MapQuest</span>
+          <span class="help-block">Mappy will read a random tweet that mentions <code>@MapQuest</code></span>
         </div>
         <div class="well form-group">
           <div class="input-group">

@@ -31,6 +31,7 @@
           <div class="input-group">
             <select name="phrase" class="form-control" id="phrase">
               <option value="">Select a pre-recorded sound file</option>
+              <option value="bigbutts">I like big butts...</option>
               <option value="bitch">say what again...</option>
               <option value="believeitornot">doggo: believe it or not...</option>
               <option value="dogofwisdom">doggo: ba daba da ba</option>

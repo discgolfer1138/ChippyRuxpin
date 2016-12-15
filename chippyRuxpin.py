@@ -115,11 +115,11 @@ def directionsDemo():
         # "Auraria Parkway becomes ramp",
         "Merge onto I-25 southbound",
         "Take EXIT 209B towards US-6 west",
-        "Merge onto US-6 west",
+        # "Merge onto US-6 west",
         "Take the exit toward Indiana Street",
         # "Keep left to take the ramp toward Indiana Street",
         "Turn left onto Indiana Street",
-        "Turn left onto West 6th Ave Frontage Road",
+        # "Turn left onto West 6th Ave Frontage Road",
         "Turn right onto Deframe Court",
         "You have arrived at your destination"
     ]

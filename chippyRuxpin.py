@@ -12,10 +12,10 @@
 # For more information, visit this URL:
 # https://dev.twitter.com/oauth/overview/application-owner-access-tokens
 
-consumerKey='INSERT YOUR CONSUMER KEY HERE FROM TWITTER'
-consumerSecret='INSERT YOUR CONSUMER SECRET HERE FROM TWITTER'
-accessTokenKey='INSERT YOUR ACCESS TOKEN KEY HERE FROM TWITTER'
-accessTokenSecret='INSERT YOUR ACCESS TOKEN SECRET HERE FROM TWITTER'
+consumerKey='OXf9POx7b4Uwf3Ip9nQZz30fA'
+consumerSecret='kk7nFjPSv2lkrzuASpsOnIVsp9JpHVnqPuXAoh7jZZsGk2unxL'
+accessTokenKey='22168166-hztJHStqovenISE5ozZFyjQe3pl3uCnRP4eZKHZfE'
+accessTokenSecret='WRhwC1gq9MfcGpJH4KRFAnXvSvi3SUgljWHGRX4Gif5bd'
 
 import sys
 import time
@@ -88,20 +88,25 @@ def phrase(myPhrase):
     return myPhrase
 
 def talk(myText):
-    if( myText.find( "twitter" ) >= 0 ):
-        myText += "0"
-        myText = myText[7:-1]
-        try:
-            myText = twitter.getTweet( myText )
-        except:
-            print( "!!!ERROR: INVALID TWITTER CREDENTIALS. Please read README.md for instructions.")
-            return
-    
     os.system( "espeak \",...\" 2>/dev/null" ) # Sometimes the beginning of audio can get cut off. Insert silence.
     time.sleep( 0.5 )
     subprocess.call(["espeak", "-w", "speech.wav", myText, "-s", "130", "-a", "200", "-ven-us+m3","-g","5"])
     audio.play("speech.wav")
     return myText
+
+def tweet():
+    latestTweet = ""
+    try:
+        latestTweet = twitter.getTweet( "@mapquest" )
+    except:
+        print( "!!!ERROR: INVALID TWITTER CREDENTIALS. Please read README.md for instructions.")
+        return
+    
+    os.system( "espeak \",...\" 2>/dev/null" ) # Sometimes the beginning of audio can get cut off. Insert silence.
+    time.sleep( 0.5 )
+    subprocess.call(["espeak", "-w", "speech.wav", latestTweet, "-s", "130", "-a", "200", "-ven-us+m3","-g","5"])
+    audio.play("speech.wav")
+    return latestTweet
 
 def directionsDemo():
     directions = [
@@ -135,7 +140,7 @@ if( consumerKey.find( 'TWITTER' ) >= 0 ):
 else:
     twitter = ChippyTwitter(consumerKey,consumerSecret,accessTokenKey,accessTokenSecret)
 
-web = WebFramework(talk, phrase, directionsDemo)
+web = WebFramework(talk, phrase, directionsDemo, tweet)
 isRunning = False
 io.cleanup()
 sys.exit(1)

@@ -7,7 +7,7 @@ from bottle import run, get, post, request, route, redirect, template
 import socket
 
 class WebFramework:
-    def __init__(self,talkFunc, phraseFunc, dirFunc):
+    def __init__(self,talkFunc, phraseFunc, dirFunc, tweetFunc):
         self.ip = [(s.connect(('8.8.8.8', 80)), s.getsockname()[0], s.close()) for s in [socket.socket(socket.AF_INET, socket.SOCK_DGRAM)]][0][1]
         print( "---------")
         print( "CHIPPY RUXPIN IS ONLINE!")
@@ -16,6 +16,7 @@ class WebFramework:
         self.talkFunc = talkFunc
         self.phraseFunc = phraseFunc
         self.dirFunc = dirFunc
+        self.tweetFunc = tweetFunc
         
         @route('/')
         def index():
@@ -26,9 +27,12 @@ class WebFramework:
             phrase = request.forms.get('phrase')
             speech = request.forms.get('speech')
             demo = request.forms.get('demo')
+            tweet = request.forms.get('tweet')
 
             if(demo == "1"):
                 self.dirFunc()
+            if(tweet == "1"):
+                self.tweetFunc()
             elif(phrase != ""):
                 self.phraseFunc( phrase )
             else:

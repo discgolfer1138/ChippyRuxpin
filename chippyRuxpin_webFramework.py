@@ -18,9 +18,9 @@ class WebFramework:
         self.dirFunc = dirFunc
         self.tweetFunc = tweetFunc
 
-        @route('/static/<filename>')
+        @route('/public/<filename>')
         def server_static(filename):
-            return static_file(filename, root='./static')
+            return static_file(filename, root='./public')
         
         @route('/')
         def index():

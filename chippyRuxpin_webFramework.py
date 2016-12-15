@@ -18,29 +18,38 @@ class WebFramework:
         self.dirFunc = dirFunc
         self.tweetFunc = tweetFunc
 
-        @route('/public/<filename>')
+        @get('/public/<filename>')
         def server_static(filename):
             return static_file(filename, root='./public')
         
-        @route('/')
+        @get('/naughty')
+        def index():
+            return template('naughty')
+
+        @post('/naughty')
+        def speak():
+            phrase = request.forms.get('phrase')
+            speech = request.forms.get('speech')
+
+            if(phrase != ""):
+                self.phraseFunc( phrase )
+            else:
+                self.talkFunc( speech )
+            redirect('/')
+
+        @get('/')
         def index():
             return template('index')
 
         @post('/')
         def speak():
-            phrase = request.forms.get('phrase')
-            speech = request.forms.get('speech')
             demo = request.forms.get('demo')
             tweet = request.forms.get('tweet')
 
             if(demo == "1"):
                 self.dirFunc()
-            if(tweet == "1"):
+            elif(tweet == "1"):
                 self.tweetFunc()
-            elif(phrase != ""):
-                self.phraseFunc( phrase )
-            else:
-                self.talkFunc( speech )
             redirect('/')
 
         run(host=self.ip, port=8080, debug=True)

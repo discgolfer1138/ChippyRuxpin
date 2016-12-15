@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Chippy Ruxpin</title>
+    <title>Mappy Ruxpin</title>
     
     <meta name="description" content="Make the bear talk">
     <meta name="author" content="Chad Francis">

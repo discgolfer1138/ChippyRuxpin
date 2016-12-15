@@ -35,7 +35,7 @@ class WebFramework:
                 self.phraseFunc( phrase )
             else:
                 self.talkFunc( speech )
-            redirect('/')
+            redirect('/naughty')
 
         @get('/')
         def index():

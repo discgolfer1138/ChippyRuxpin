@@ -31,18 +31,27 @@
           <div class="input-group">
             <select name="phrase" class="form-control" id="phrase">
               <option value="">Select a pre-recorded sound file</option>
-              <option value="believeitornot">doggo: believe it or not...</option>
               <option value="bitch">say what again...</option>
-              <option value="breath">vader: breathing</option>
+              <option value="believeitornot">doggo: believe it or not...</option>
               <option value="dogofwisdom">doggo: ba daba da ba</option>
+              <option value="kissmyass">clark: merry christmas, kiss my ...</option>
+              <option value="merryxmas">clark: boss rant</option>
+              <option value="surprised">clark: if I woke up tomorrow...</option>
+              <option value="grownman">captain: joey... have you ever</option>
+              <option value="88miles">doc: if my calculations are correct...</option>
+              <option value="dumber">harry: just when I think...</option>
+              <option value="nerfherder">leia: why you stuck up...</option>
+              <option value="breath">vader: breathing</option>
+              <option value="proud">vader: don't be too proud...</option>
               <option value="failed">vader: you have failed me for the last time</option>
               <option value="faith">vader: I find your lack of faith disturbing</option>
               <option value="father">vader: No, I am your father</option>
               <option value="honored">vader: We'd be honored...</option>
-              <option value="merryxmas">clark: boss rant</option>
-              <option value="nerfherder">leia: why you stuck up...</option>
-              <option value="proud">vader: don't be too proud...</option>
-              <option value="surprised">clark: if I woke up tomorrow...</option>
+              <option value="forceiswithyou">vader: The force is with you...</option>
+              <option value="power">vader: If you only knew the power...</option>
+              <option value="chewie">chewie: grawgrhghghg...</option>
+              <option value="threepio">c-3po: human cyborg relations...</option>
+              <option value="trynot">yoda: Try not...</option>
             </select>
             <span class="input-group-btn">
               <button type="submit" class="btn btn-info"><i class="fa fa-play-circle" aria-hidden="true"></i></button>

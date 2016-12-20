@@ -36,10 +36,16 @@
               <option value="believeitornot">doggo: believe it or not...</option>
               <option value="dogofwisdom">doggo: ba daba da ba</option>
               <option value="ding1">anon: ding fries are done (1)</option>
+              <option value="ding2">anon: ding fries are done (2)</option>
+              <option value="ding3">anon: ding fries are done (3)</option>
               <option value="kissmyass">clark: merry christmas, kiss my ...</option>
               <option value="merryxmas">clark: boss rant</option>
               <option value="surprised">clark: if I woke up tomorrow...</option>
-              <option value="grownman">captain: joey... have you ever</option>
+              <option value="grownman">airplane: grown man naked</option>
+              <option value="gymnasium">airplane: hang around the gymnasium</option>
+              <option value="gladiators">airplane: movies about gladiators</option>
+              <option value="turkish">airplane: turkish prison</option>
+              <option value="surely">airplane: don't call me surely</option>
               <option value="88miles">doc: if my calculations are correct...</option>
               <option value="dumber">harry: just when I think...</option>
               <option value="nerfherder">leia: why you stuck up...</option>

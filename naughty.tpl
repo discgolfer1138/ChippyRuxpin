@@ -35,6 +35,7 @@
               <option value="bitch">say what again...</option>
               <option value="believeitornot">doggo: believe it or not...</option>
               <option value="dogofwisdom">doggo: ba daba da ba</option>
+              <option value="ding1">anon: ding fries are done (1)</option>
               <option value="kissmyass">clark: merry christmas, kiss my ...</option>
               <option value="merryxmas">clark: boss rant</option>
               <option value="surprised">clark: if I woke up tomorrow...</option>

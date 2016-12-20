@@ -60,6 +60,16 @@
               <option value="chewie">chewie: grawgrhghghg...</option>
               <option value="threepio">c-3po: human cyborg relations...</option>
               <option value="trynot">yoda: Try not...</option>
+              <option value="everyone">billy madison: everyone is now dumber</option>
+              <option value="hiney">billy madison: so hot, want to touch the hiney</option>
+              <option value="bleep">happy gilmore: *bleep*</option>
+              <option value="gohome">happy gilmore: are you too good for your home?</option>
+              <option value="jackass">happy gilmore: you suck, ya jackass</option>
+              <option value="kickmyownass">happy gilmore: .. I'd have to kick my own ass</option>
+              <option value="piecesofshit">happy gilmore: I eat pieces of shit like you...</option>
+              <option value="priceiswrong">happy gilmore: the price is wrong</option>
+              <option value="shutthehellup">happy gilmore: nice glass of shut the hell up</option>
+              <option value="taparoo">happy gilmore: give it a tappy</option>
             </select>
             <span class="input-group-btn">
               <button type="submit" class="btn btn-info"><i class="fa fa-play-circle" aria-hidden="true"></i></button>

@@ -70,6 +70,7 @@
               <option value="priceiswrong">happy gilmore: the price is wrong</option>
               <option value="shutthehellup">happy gilmore: nice glass of shut the hell up</option>
               <option value="taparoo">happy gilmore: give it a tappy</option>
+              <option value="purpose">rick and morty: what is my purpose? oh my god.</option>
             </select>
             <span class="input-group-btn">
               <button type="submit" class="btn btn-info"><i class="fa fa-play-circle" aria-hidden="true"></i></button>

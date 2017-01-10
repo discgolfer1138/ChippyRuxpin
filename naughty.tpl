@@ -31,16 +31,13 @@
           <div class="input-group">
             <select name="phrase" class="form-control" id="phrase">
               <option value="">Select a pre-recorded sound file</option>
-              <option value="bigbutts">I like big butts...</option>
               <option value="bitch">say what again...</option>
               <option value="believeitornot">doggo: believe it or not...</option>
               <option value="dogofwisdom">doggo: ba daba da ba</option>
               <option value="ding1">anon: ding fries are done (1)</option>
               <option value="ding2">anon: ding fries are done (2)</option>
               <option value="ding3">anon: ding fries are done (3)</option>
-              <option value="kissmyass">clark: merry christmas, kiss my ...</option>
               <option value="merryxmas">clark: boss rant</option>
-              <option value="surprised">clark: if I woke up tomorrow...</option>
               <option value="grownman">airplane: grown man naked</option>
               <option value="gymnasium">airplane: hang around the gymnasium</option>
               <option value="gladiators">airplane: movies about gladiators</option>
@@ -50,15 +47,10 @@
               <option value="dumber">harry: just when I think...</option>
               <option value="nerfherder">leia: why you stuck up...</option>
               <option value="breath">vader: breathing</option>
-              <option value="proud">vader: don't be too proud...</option>
               <option value="failed">vader: you have failed me for the last time</option>
-              <option value="faith">vader: I find your lack of faith disturbing</option>
               <option value="father">vader: No, I am your father</option>
-              <option value="honored">vader: We'd be honored...</option>
               <option value="forceiswithyou">vader: The force is with you...</option>
-              <option value="power">vader: If you only knew the power...</option>
               <option value="chewie">chewie: grawgrhghghg...</option>
-              <option value="threepio">c-3po: human cyborg relations...</option>
               <option value="trynot">yoda: Try not...</option>
               <option value="everyone">billy madison: everyone is now dumber</option>
               <option value="hiney">billy madison: so hot, want to touch the hiney</option>
@@ -71,6 +63,18 @@
               <option value="shutthehellup">happy gilmore: nice glass of shut the hell up</option>
               <option value="taparoo">happy gilmore: give it a tappy</option>
               <option value="purpose">rick and morty: what is my purpose? oh my god.</option>
+              <option value="assholomio">ace ventura: assholomio, oh sodomia</option>
+              <option value="donotgointhere">ace ventura: do NOT go in there... whew!</option>
+              <option value="fart">monty python: I fart in your general direction</option>
+              <option value="getnothing">caddyshack: you'll get nothing and like it</option>
+              <option value="ni">monty python: we are the nights who say... ni!</option>
+              <option value="taunt">monty python: Now go away or I shall taunt you a second time.</option>
+              <option value="hamster">monty python: Your mother was a hamster...</option>
+              <option value="takedrugs">caddyshack: Do you take drugs Danny?</option>
+              <option value="billybaroo">caddyshack: billy baroo</option>
+              <option value="cinderella">caddyshack: cinderalla scene</option>
+              <option value="bowlofsoup">caddyshack: free bowl of soup</option>
+              <option value="ants">archer: that's how you get ants</option>
             </select>
             <span class="input-group-btn">
               <button type="submit" class="btn btn-info"><i class="fa fa-play-circle" aria-hidden="true"></i></button>

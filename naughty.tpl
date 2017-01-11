@@ -77,7 +77,7 @@
               <option value="allyourmonies">strong bad: hand over all your monies</option>
               <option value="whatthecrap">strong bad: what the crap were you doing</option>
               <option value="heystupid">homestar: hey stupid</option>
-              <option value="canubeleiveit">homestar: can you believe it?</option>
+              <option value="canubelieveit">homestar: can you believe it?</option>
               <option value="baleeted">homestar: baleeted</option>
             </select>
             <span class="input-group-btn">

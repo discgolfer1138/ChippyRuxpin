@@ -66,15 +66,19 @@
               <option value="assholomio">ace ventura: assholomio, oh sodomia</option>
               <option value="donotgointhere">ace ventura: do NOT go in there... whew!</option>
               <option value="fart">monty python: I fart in your general direction</option>
-              <option value="getnothing">caddyshack: you'll get nothing and like it</option>
               <option value="ni">monty python: we are the nights who say... ni!</option>
               <option value="taunt">monty python: Now go away or I shall taunt you a second time.</option>
               <option value="hamster">monty python: Your mother was a hamster...</option>
               <option value="takedrugs">caddyshack: Do you take drugs Danny?</option>
+              <option value="getnothing">caddyshack: you'll get nothing and like it</option>
               <option value="billybaroo">caddyshack: billy baroo</option>
               <option value="cinderella">caddyshack: cinderalla scene</option>
               <option value="bowlofsoup">caddyshack: free bowl of soup</option>
-              <option value="ants">archer: that's how you get ants</option>
+              <option value="allyourmonies">strong bad: hand over all your monies</option>
+              <option value="whatthecrap">strong bad: what the crap were you doing</option>
+              <option value="heystupid">homestar: hey stupid</option>
+              <option value="canubeleiveit">homestar: can you believe it?</option>
+              <option value="baleeted">homestar: baleeted</option>
             </select>
             <span class="input-group-btn">
               <button type="submit" class="btn btn-info"><i class="fa fa-play-circle" aria-hidden="true"></i></button>

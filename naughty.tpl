@@ -31,12 +31,9 @@
           <div class="input-group">
             <select name="phrase" class="form-control" id="phrase">
               <option value="">Select a pre-recorded sound file</option>
-              <option value="bitch">say what again...</option>
+              <option value="ants">Archer: You want ants...</option>
               <option value="believeitornot">doggo: believe it or not...</option>
               <option value="dogofwisdom">doggo: ba daba da ba</option>
-              <option value="ding1">anon: ding fries are done (1)</option>
-              <option value="ding2">anon: ding fries are done (2)</option>
-              <option value="ding3">anon: ding fries are done (3)</option>
               <option value="merryxmas">clark: boss rant</option>
               <option value="grownman">airplane: grown man naked</option>
               <option value="gymnasium">airplane: hang around the gymnasium</option>
@@ -74,7 +71,6 @@
               <option value="billybaroo">caddyshack: billy baroo</option>
               <option value="cinderella">caddyshack: cinderalla scene</option>
               <option value="bowlofsoup">caddyshack: free bowl of soup</option>
-              <option value="allyourmonies">strong bad: hand over all your monies</option>
               <option value="whatthecrap">strong bad: what the crap were you doing</option>
               <option value="heystupid">homestar: hey stupid</option>
               <option value="canubelieveit">homestar: can you believe it?</option>

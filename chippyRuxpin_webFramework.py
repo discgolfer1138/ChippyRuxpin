@@ -10,7 +10,7 @@ class WebFramework:
     def __init__(self,talkFunc, phraseFunc, dirFunc, tweetFunc):
         self.ip = [(s.connect(('8.8.8.8', 80)), s.getsockname()[0], s.close()) for s in [socket.socket(socket.AF_INET, socket.SOCK_DGRAM)]][0][1]
         print( "---------")
-        print( "CHIPPY RUXPIN IS ONLINE!")
+        print( "MAPPY RUXPIN IS ONLINE!")
         print( "In your browser, go to " + str(self.ip) + ":8080")
         print( "---------")
         self.talkFunc = talkFunc
@@ -36,6 +36,82 @@ class WebFramework:
             else:
                 self.talkFunc( speech )
             redirect('/naughty')
+
+        @post('/slack')
+token=Xn8zpocBWLt1hZbTaFogCpa6
+team_id=T0001
+team_domain=example
+channel_id=C2147483705
+channel_name=test
+user_id=U2147483697
+user_name=Steve
+command=/weather
+text=94070
+response_url=https://hooks.slack.com/commands/1234/5678
+
+        def slack():
+            phrases = {
+                "ants": "Archer: You want ants...",
+                "believeitornot": "doggo: believe it or not...",
+                "dogofwisdom": "doggo: ba daba da ba",
+                "merryxmas": "clark: boss rant",
+                "grownman": "airplane: grown man naked",
+                "gymnasium": "airplane: hang around the gymnasium",
+                "gladiators": "airplane: movies about gladiators",
+                "turkish": "airplane: turkish prison",
+                "surely": "airplane: don't call me surely",
+                "88miles": "doc: if my calculations are correct...",
+                "dumber": "harry: just when I think...",
+                "nerfherder": "leia: why you stuck up...",
+                "breath": "vader: breathing",
+                "failed": "vader: you have failed me for the last time",
+                "father": "vader: No, I am your father",
+                "forceiswithyou": "vader: The force is with you...",
+                "chewie": "chewie: grawgrhghghg...",
+                "trynot": "yoda: Try not...",
+                "everyone": "billy madison: everyone is now dumber",
+                "hiney": "billy madison: so hot, want to touch the hiney",
+                "bleep": "happy gilmore: *bleep*",
+                "gohome": "happy gilmore: are you too good for your home?",
+                "jackass": "happy gilmore: you suck, ya jackass",
+                "kickmyownass": "happy gilmore: .. I'd have to kick my own ass",
+                "piecesofshit": "happy gilmore: I eat pieces of shit like you...",
+                "priceiswrong": "happy gilmore: the price is wrong",
+                "shutthehellup": "happy gilmore: nice glass of shut the hell up",
+                "taparoo": "happy gilmore: give it a tappy",
+                "purpose": "rick and morty: what is my purpose? oh my god.",
+                "assholomio": "ace ventura: assholomio, oh sodomia",
+                "donotgointhere": "ace ventura: do NOT go in there... whew!",
+                "fart": "monty python: I fart in your general direction",
+                "ni": "monty python: we are the nights who say... ni!",
+                "taunt": "monty python: Now go away or I shall taunt you a second time.",
+                "hamster": "monty python: Your mother was a hamster...",
+                "takedrugs": "caddyshack: Do you take drugs Danny?",
+                "getnothing": "caddyshack: you'll get nothing and like it",
+                "billybaroo": "caddyshack: billy baroo",
+                "cinderella": "caddyshack: cinderalla scene",
+                "bowlofsoup": "caddyshack: free bowl of soup",
+                "whatthecrap": "strong bad: what the crap were you doing",
+                "heystupid": "homestar: hey stupid",
+                "canubelieveit": "homestar: can you believe it?",
+                "baleeted": "homestar: baleeted",
+            }
+            text = request.forms.get('text')
+
+            response.content_type = 'text/plain'
+
+            if(text == "list")
+                phraseList = "```\n"
+                for key, value in d.items():
+                    phraseList += "%s and %s \n" % (key, value)
+                phraseList += "```\n"
+                return phraseList
+            else
+                if(text in phrases):
+                    self.phraseFunc( text )
+                else:
+                    self.talkFunc( text )
+                return "done"
 
         @get('/')
         def index():

@@ -99,9 +99,10 @@ class WebFramework:
             else:
                 if(text in phrases):
                     self.phraseFunc( text )
+                    return "Chippy played the phrase: \"%s\"" % phrases[text]
                 else:
                     self.talkFunc( text )
-                return "done"
+                    return "Chippy said: \"%s\"" % text
 
         @get('/')
         def index():

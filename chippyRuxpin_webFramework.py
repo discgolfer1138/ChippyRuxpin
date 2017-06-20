@@ -88,21 +88,20 @@ class WebFramework:
             text = request.forms.get('text')
 
             response.content_type = 'text/plain'
-            return text
 
-            # if(text == "list"):
-            #     phraseList = "```\n"
-            #     for key, value in d.items():
-            #         phrase = ("%s => %s \n" % (key, value))
-            #         phraseList += phrase
-            #     phraseList += "```\n"
-            #     return phraseList
-            # else:
-            #     if(text in phrases):
-            #         self.phraseFunc( text )
-            #     else:
-            #         self.talkFunc( text )
-            #     return "done"
+            if(text == "list"):
+                phraseList = "```\n"
+                for key, value in d.items():
+                    phrase = ("%s => %s \n" % (key, value))
+                    phraseList += phrase
+                phraseList += "```\n"
+                return phraseList
+            else:
+                if(text in phrases):
+                    self.phraseFunc( text )
+                else:
+                    self.talkFunc( text )
+                return "done"
 
         @get('/')
         def index():

@@ -3,7 +3,7 @@
 # Chippy Ruxpin by Next Thing Co 2015
 # Powered by C.H.I.P., the world's first $9 computer!
 
-from bottle import run, get, post, request, route, redirect, template, static_file
+from bottle import run, get, post, request, response, route, redirect, template, static_file
 import socket
 
 class WebFramework:

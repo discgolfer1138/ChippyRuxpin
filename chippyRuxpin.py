@@ -72,16 +72,8 @@ def updateEyes():
     while isRunning:
         io.set( EYES_CLOSE, 1 )
         io.set( EYES_OPEN, 0 )
-        time.sleep(0.4)
-        io.set( EYES_CLOSE, 0 )
-        io.set( EYES_OPEN, 1 )
-        time.sleep(0.4)
-        io.set( EYES_CLOSE, 1 )
-        io.set( EYES_OPEN, 0 )
-        time.sleep(0.4)
-        io.set( EYES_CLOSE, 0 )
-        io.set( EYES_OPEN, 0 )
-        time.sleep( randint( 0,7) )
+        time.sleep(5)
+        time.sleep( randint( 1,10) )
    
 def phrase(myPhrase):
     audio.play("sounds/"+myPhrase+".wav")

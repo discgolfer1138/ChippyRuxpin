@@ -92,7 +92,8 @@ class WebFramework:
             if(text == "list"):
                 phraseList = "```\n"
                 for key, value in d.items():
-                    phraseList += "%s and %s \n" % (key, value)
+                    phrase = "%s and %s \n" % (key, value)
+                    phraseList += phrase
                 phraseList += "```\n"
                 return phraseList
             else:

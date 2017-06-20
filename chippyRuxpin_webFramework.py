@@ -89,13 +89,13 @@ class WebFramework:
 
             response.content_type = 'text/plain'
 
-            if(text == "list")
+            if(text == "list"):
                 phraseList = "```\n"
                 for key, value in d.items():
                     phraseList += "%s and %s \n" % (key, value)
                 phraseList += "```\n"
                 return phraseList
-            else
+            else:
                 if(text in phrases):
                     self.phraseFunc( text )
                 else:

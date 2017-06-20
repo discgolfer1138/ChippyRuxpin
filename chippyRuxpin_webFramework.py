@@ -91,7 +91,7 @@ class WebFramework:
 
             if(text == "list"):
                 phraseList = "```\n"
-                for key, value in d.items():
+                for key, value in phrases.items():
                     phrase = ("%s => %s \n" % (key, value))
                     phraseList += phrase
                 phraseList += "```\n"

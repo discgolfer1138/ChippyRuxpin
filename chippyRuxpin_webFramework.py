@@ -8,7 +8,8 @@ import socket
 
 class WebFramework:
     def __init__(self,talkFunc, phraseFunc, dirFunc, tweetFunc):
-        self.ip = [(s.connect(('8.8.8.8', 80)), s.getsockname()[0], s.close()) for s in [socket.socket(socket.AF_INET, socket.SOCK_DGRAM)]][0][1]
+        # self.ip = [(s.connect(('8.8.8.8', 80)), s.getsockname()[0], s.close()) for s in [socket.socket(socket.AF_INET, socket.SOCK_DGRAM)]][0][1]
+        self.ip = "127.0.0.1"
         print( "---------")
         print( "MAPPY RUXPIN IS ONLINE!")
         print( "In your browser, go to " + str(self.ip) + ":8080")

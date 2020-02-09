@@ -16,6 +16,7 @@ from lib.servo import Servo
 from lib.audioPlayer import AudioPlayer
 from lib.webFramework import WebFramework
 
+GPIO.cleanup()
 GPIO.setmode(GPIO.BCM)
 
 eyes = Servo(

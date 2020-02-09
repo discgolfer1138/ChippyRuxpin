@@ -44,6 +44,7 @@ mouth = Servo(
 
 audio = None
 isRunning = True
+GPIO.setmode(GPIO.BCM)
 
 def updateMouth():
   lastMouthEvent = 0

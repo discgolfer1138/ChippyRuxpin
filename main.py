@@ -17,7 +17,6 @@ from lib.audioPlayer import AudioPlayer
 from lib.webFramework import WebFramework
 
 GPIO.cleanup()
-GPIO.setmode(GPIO.BCM)
 
 eyes = Servo(
   pwm_pin=18,
@@ -25,8 +24,7 @@ eyes = Servo(
   cdir_pin=23,
   duration=.3,
   speed=100,
-  label='eyes',
-  GPIO=GPIO
+  label='eyes'
 )
 
 mouth = Servo(
@@ -35,8 +33,7 @@ mouth = Servo(
   cdir_pin=27,
   duration=.3,
   speed=100,
-  label='mouth',
-  GPIO=GPIO
+  label='mouth'
 )
 
 audio = None

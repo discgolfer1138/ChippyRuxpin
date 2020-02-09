@@ -16,14 +16,7 @@ from lib.servo import Servo
 from lib.audioPlayer import AudioPlayer
 from lib.webFramework import WebFramework
 
-PWMA = 18
-AIN1 = 24
-AIN2 = 23
-PWMB = 17
-BIN1 = 22
-BIN2 = 27
-
-# bind mouth and eye servos based on pins defined in config
+GPIO.setmode(GPIO.BCM)
 eyes = Servo(
   pwm_pin=18,
   dir_pin=24,
@@ -44,7 +37,6 @@ mouth = Servo(
 
 audio = None
 isRunning = True
-GPIO.setmode(GPIO.BCM)
 
 def updateMouth():
   lastMouthEvent = 0

@@ -11,11 +11,12 @@ from random import randint
 from threading import Thread
 
 import RPi.GPIO as GPIO
-GPIO.setmode(GPIO.BCM)
-
 from lib.servo import Servo
+
 from lib.audioPlayer import AudioPlayer
 from lib.webFramework import WebFramework
+
+GPIO.setmode(GPIO.BCM)
 
 eyes = Servo(
   pwm_pin=18,

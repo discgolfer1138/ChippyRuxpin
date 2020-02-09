@@ -16,7 +16,6 @@ from lib.servo import Servo
 from lib.audioPlayer import AudioPlayer
 from lib.webFramework import WebFramework
 
-GPIO.setmode(GPIO.BCM)
 eyes = Servo(
   pwm_pin=18,
   dir_pin=24,

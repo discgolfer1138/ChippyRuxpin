@@ -25,7 +25,8 @@ eyes = Servo(
   cdir_pin=23,
   duration=.3,
   speed=100,
-  label='eyes'
+  label='eyes',
+  GPIO=GPIO
 )
 
 mouth = Servo(
@@ -34,7 +35,8 @@ mouth = Servo(
   cdir_pin=27,
   duration=.3,
   speed=100,
-  label='mouth'
+  label='mouth',
+  GPIO=GPIO
 )
 
 audio = None

@@ -11,6 +11,7 @@ from random import randint
 from threading import Thread
 
 import RPi.GPIO as GPIO
+GPIO.setmode(GPIO.BCM)
 
 from lib.servo import Servo
 from lib.audioPlayer import AudioPlayer
@@ -76,7 +77,6 @@ mouthThread.start()
 eyesThread = Thread(target=updateEyes)
 eyesThread.start()     
 audio = AudioPlayer()
-
 
 web = WebFramework(talk)
 isRunning = False

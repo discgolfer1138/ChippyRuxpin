@@ -3,7 +3,7 @@ import time
 
 class Servo:
   
-  def __init__(self, pwm_pin=None, dir_pin=None, cdir_pin=None, pwm_freq=2000, duration=.5, speed=100, label="unknown", GPIO=GPIO):
+  def __init__(self, pwm_pin=None, dir_pin=None, cdir_pin=None, pwm_freq=2000, duration=.5, speed=100, label="unknown", GPIO=None):
 
     # validate parameters
     if(pwm_pin is None): raise Exception("pwm pin not set")
